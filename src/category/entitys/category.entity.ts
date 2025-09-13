@@ -10,6 +10,12 @@ export class Category {
     name: string;
 
     @Column({
+        type: 'varchar',
+        length: 5000
+    })
+    icon: string;
+
+    @Column({
         default: null
     })
     sort: number;
